@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"> </script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    {{ message }}
+</div>
+<div id="app2">
+    <span v-bind:title="message">
+        鼠标悬停查看动态绑定
+    </span>
+</div>
+<div id = "app3">
+    <ol>
+        <li v-for = 'todo in todos'>
+            {{todo.text}}
+        </li>
+    </ol>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
