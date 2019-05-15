@@ -21,6 +21,31 @@
         </li>
     </ol>
 </div>
+
+    <div id="app5">
+        <span id="span1" >{{message}}</span>
+        <button v-on:click="resaleMessage">逆转消息</button>
+    </div>
+
+    <div id="app6">
+        <span>{{message}}</span>
+        <label>
+            <input v-model="message">
+        </label>
+
+        <ol>
+            <todo-item>aaa</todo-item>
+            <todo-item>aaa</todo-item>
+            <todo-item>aaa</todo-item>
+        </ol>
+    </div>
+    <div id="app7">
+        <idss-num v-for="item in list"
+            v-bind:todo="item"
+        ></idss-num>
+    </div>
+
+
 </body>
 <script src="index.js"></script>
 </html>
